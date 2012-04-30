@@ -67,7 +67,7 @@ function find(xpath, xpres){
 }
 function cleanSozluk() {
 	var donBebegim = find("//button", XPFirst);
-	if ((donBebegim) && (donBebegim.firstChild.data == 'dön bebeğim')) {
+	if ((donBebegim) && (donBebegim.firstChild.data == 'her zamanki görünüm')) {
 		donBebegim.click();
 	}
 	var elemToHide = find("//*[@id='ad' or @id='as']", XPFirst);
